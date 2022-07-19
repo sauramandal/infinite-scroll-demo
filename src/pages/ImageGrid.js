@@ -48,6 +48,9 @@ const ImageGrid = () => {
 
   useEffect(() => {
     fetchData();
+  }, []);
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
